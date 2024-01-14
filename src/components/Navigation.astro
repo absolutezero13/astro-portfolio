@@ -1,0 +1,14 @@
+---
+import { portfolioConstants } from '../pages/constants';
+import ThemeIcon from './ThemeIcon.astro';
+---
+<div class="nav-bar">
+    <div class="title-link">
+        <a href="/">{portfolioConstants.name}</a>
+    </div>
+    <div class="nav-links">
+        <a href="/works/">Works</a>
+        <a href="https://github.com/absolutezero13" target="_blank">GitHub</a>
+        <ThemeIcon />
+    </div>
+</div>

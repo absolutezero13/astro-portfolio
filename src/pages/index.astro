@@ -1,0 +1,71 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { portfolioConstants } from './constants';
+---
+<Layout pageTitle={portfolioConstants.name}>
+    <div class="gif">
+        <img width="300" height="259" alt="RaccoonSpaceGif" src="/space.webp"/>
+    </div>
+    <h1>{portfolioConstants.name}</h1>
+    <small>Software Engineer</small>
+    <h2>About</h2>
+    {portfolioConstants.about.map(text=><p>{text}</p>)}
+    <div class="button">
+        <a href="/works/">
+            <button class="button">My portfolio</button>
+        </a>
+    </div>
+    <h2>Skills</h2>
+    <div class="link-images">
+        {portfolioConstants.skills.map(skill=><img width="46" height="46" alt={skill.name} src={skill.image}/>)}
+    </div>
+    <h2>Interests</h2>
+    <p>
+        {portfolioConstants.interests}
+    </p>
+</Layout>
+<style>
+    /* small */
+    small {
+        background-color: #584966;
+        color: #fdebf3;
+        border-radius: 6px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 600;
+        padding: 0.3em 0.6em 0.2em;
+    }
+
+    /* Button */
+    button {
+        background: rgba(0,0,0,0);
+        border: 2px solid #78c2ad;
+        border-radius: 8px;
+        color: #fdebf3;
+        font: 600 16px 'Josefin Sans', sans-serif;
+        padding: 8px 16px;
+        transition: background-color 0.4s, color 0.4s;
+    }
+
+    button:hover {
+        background-color: #78c2ad;
+        color: #1e1e2e;
+        cursor: pointer;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    /* Skill images */
+    .link-images img {
+        margin: 16px 4px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .link-images img {
+            height: 30px;
+            width: 30px;
+            margin: 16px 1px;
+        }
+    }
+</style>
