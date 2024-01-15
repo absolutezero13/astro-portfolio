@@ -30,5 +30,6 @@ export const portfolioConstants = {
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     },
   ],
-  interests: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  interests:
+    "Outside of programming, I'm a musician at heart. I have a deep love for playing guitar and piano. Being a musician has taught me valuable skills like creativity, discipline, and perseverance, which I bring to my programming work.",
 };
