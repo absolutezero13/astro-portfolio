@@ -1,20 +1,20 @@
 ---
 layout: ../../layouts/MarkdownWorksLayout.astro
-title: 'Project 1'
-description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci'
+title: "Gpt Assistant"
+description: "An AI assistant specialized on different tasks."
 image:
-    url: '/GitHub.webp'
-    alt: 'GitHub wallpaper'
+  url: "https://iili.io/JYwPQ2e.png"
+  alt: "GitHub wallpaper"
 worksImage1:
-    url: '/image-1.webp'
-    alt: 'first image of your project.'
+  url: "https://iili.io/JYwPQ2e.png"
+  alt: "first image of the project."
 worksImage2:
-    url: '/image-2.webp'
-    alt: 'second image of your project.'
+  url: "https://iili.io/JYwPtkb.png"
+  alt: "second image of the project."
 platform: Web
-stack: Astro, JavaScript
-website: https://astro-milky-way.netlify.app/
-github: https://github.com/ttomczak3/Milky-Way
+stack: React, Typescript, Express, Firebase, MongoDB
+website: https://gpt-assistant-19b00.web.app/
+github: https://github.com/absolutezero13/gpt-assistant
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus a tortor at molestie. Sed pellentesque leo auctor, auctor lorem nec, venenatis risus. Vivamus commodo ipsum vitae orci finibus, vel porta nunc viverra. In hac habitasse platea dictumst. Nunc pretium, ligula ultricies consequat sollicitudin, enim ex ullamcorper nisl.
+After the release of ChatGPT API, I was very excited to try it out. I was amazed by the results and wanted to build something with it. I decided to build an AI assistant that can do different tasks. I used React for the frontend and Express for the backend. I used Typescript for both the frontend and the backend.

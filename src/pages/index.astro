@@ -17,7 +17,10 @@ import { portfolioConstants } from './constants';
     </div>
     <h2>Skills</h2>
     <div class="link-images">
-        {portfolioConstants.skills.map(skill=><img width="46" height="46" alt={skill.name} src={skill.image}/>)}
+        {portfolioConstants.skills.map(skill=> <div class="skill">
+        <h5 class="skill-name" >{skill.name}</h1>
+        <img width="46" height="46" alt={skill.name} src={skill.image} class="skill-image"/></div>
+         )}
     </div>
     <h2>Interests</h2>
     <p>
@@ -52,13 +55,29 @@ import { portfolioConstants } from './constants';
         cursor: pointer;
     }
 
+    .skill-name {
+        text-align: center;
+    }
     .button {
         text-align: center;
     }
 
-    /* Skill images */
-    .link-images img {
-        margin: 16px 4px;
+    .link-images {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+
+    }
+    .skill {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        margin: 16px;
+    }
+
+
+    .link-images div {
+        margin: 0 4px;
     }
 
     @media only screen and (max-width: 600px) {
@@ -68,4 +87,15 @@ import { portfolioConstants } from './constants';
             margin: 16px 1px;
         }
     }
+    .skill-image {
+        padding: 10px;
+        border-radius: 50%;
+        border: 2px solid #78c2ad;
+        cursor: pointer;
+    }
+    .skill-image:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s;
+    }
+
 </style>
