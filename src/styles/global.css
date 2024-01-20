@@ -183,11 +183,7 @@ html.light {
 /* Media Query */
 @media only screen and (max-width: 600px) {
   body {
-    width: 320px;
-  }
-
-  .nav-bar {
-    display: initial;
+    padding: 0 32px;
   }
 
   .title-link {
