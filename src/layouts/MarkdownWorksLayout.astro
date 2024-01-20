@@ -10,7 +10,7 @@ const { frontmatter } = Astro.props;
     <slot />
     <p><small>PLATFORM</small>{frontmatter.platform}</p>
     <p><small>STACK</small>{frontmatter.stack}</p>
-    <p class="clickable"><small>WEBSITE</small><a href={frontmatter.website} target="_blank">{frontmatter.website}</a></p>
+    {frontmatter.website && <p class="clickable"><small>WEBSITE</small><a href={frontmatter.website} target="_blank">{frontmatter.website}</a></p>}
     <p class="clickable"><small>GITHUB</small><a href={frontmatter.github} target="_blank">{frontmatter.github}</a></p>
     <div class="img-wrapper">
         <img src={frontmatter.worksImage1.url} alt={frontmatter.worksImage1.alt} 
