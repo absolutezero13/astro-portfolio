@@ -111,15 +111,15 @@ a:focus {
 }
 
 .git-icon {
-  content: url("astro-portfolio/github-mark-white.svg");
+  content: url("../../public/github-mark-white.svg");
 }
 
 .mail-icon {
-  content: url("astro-portfolio/mail-white.svg");
+  content: url("../../public/mail-white.svg");
 }
 
 .linked-in {
-  content: url("astro-portfolio/li-in-white.png");
+  content: url("../../public/li-in-white.png");
 }
 
 /* Card listing */
@@ -169,15 +169,15 @@ html.light {
 }
 
 .light .git-icon {
-  content: url("astro-portfolio/github-mark.svg");
+  content: url("../../public/github-mark.svg");
 }
 
 .light .mail-icon {
-  content: url("astro-portfolio/mail.svg");
+  content: url("../../public/mail.svg");
 }
 
 .light .linked-in {
-  content: url("astro-portfolio/li-in.png");
+  content: url("../../public/li-in.png");
 }
 
 /* Media Query */
